@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0
+				maximum-scale=1.0 minimum-scale=1.0">
+		<title>Dannyz Blog</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+		<script src="resources/js/rotationScript.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<script>
+		$(document).ready(function() {
+			$("#title-header").click(function() {
+				$(this).hide("slow");
+			});
+		});
+		</script>
+	</head>
+	<body onload="startAllRotations()">
+		<h1 id="title-header"
+		class="no-margin bg-blue center-text white-text default-font"> Contact Us </h1> 
+		<div class="container" onclick="animateMenuIcon(this)">
+			<div class="menu-bar-line1"></div>
+			<div class="menu-bar-line2"></div>
+			<div class="menu-bar-line3"></div>
+			<div class="dropdown">
+				<div id="myDropDown" class="hide-dropdown-content">
+					<a href="index.html"> Home </a> <br />
+					<a href="project.html"> Projects </a> <br />
+					<a href="contact.html"> Contact </a> <br />
+					<a href="blog.html"> Blog </a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="black-solid-border">
+			<div class="nav-bar">
+				<a class="nav-menu" href="index.html"> Home </a>
+				<a class="nav-menu" href="project.html"> Project </a>
+				<a class="nav-menu active-nav-menu" href="contact.html"> Contact </a>
+				<a class="nav-menu" href="blog.html"> Blog </a>
+			</div>
+		</div>
+		<div class="blue-dotted-border blue-green-animation">
+			<br/><br/>
+			<p class="white-text center-text monospace-arial-font 25px-font">
+				Do you want to learn to code? <br/>
+				Click on the button below and I will reply on how you should get started. <br/>
+				Your email will stay anonymous. 😄 <br/>
+				<form action="mailto:coding4minorities@gmail.com">
+					<button 
+						class="center-img btn-bg-light-red btn-font btn-radius btn-w btn-h white-text">
+						Click here to email me 😄
+					</button>
+				</form>
+			</p>
+		</div>
+	</body>
+</html>
