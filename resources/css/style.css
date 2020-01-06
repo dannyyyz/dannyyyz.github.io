@@ -28,9 +28,11 @@
 /* Color Text */
 .white-text { color: white; }
 .blue-text { color: blue; }
+.neon-green-text {color: #20C20E; }
 
 /* Background colors */
 .bg-blue { background-color: blue; }
+.bg-black { background-color: black; }
 
 /* Background image */
 .cali-img {

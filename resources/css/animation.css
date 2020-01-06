@@ -287,11 +287,11 @@
 
 .fade-in-infinite-text-animation {
 	color: red;
-	animation: fadein 3s infinite;
-	-moz-animation: fadein 3s infinite;
-	-webkit-animation: fadein 3s infinite;
-	-ms-animation: fadein 3s infinite;
-	-o-animation: fadein 3s infinite;
+	animation: fadein 2s infinite;
+	-moz-animation: fadein 2s infinite;
+	-webkit-animation: fadein 2s infinite;
+	-ms-animation: fadein 2s infinite;
+	-o-animation: fadein 2s infinite;
 }
 
 @keyframes fadein {
