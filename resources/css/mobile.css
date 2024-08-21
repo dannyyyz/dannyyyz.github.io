@@ -1,0 +1,61 @@
+@media only screen and (max-width: 824px) {
+	.menu-bar-line1, .menu-bar-line2, .menu-bar-line3 {
+		width: 35px;
+		height: 5px;
+		background-color: #111; /* black */
+		margin: 6px 0px;
+		transition: 0.4s;
+	}
+	.change-menu-icon .menu-bar-line1 { transform: rotate(-45deg) translate(-9px, 9px); }
+
+	.change-menu-icon .menu-bar-line2 { opacity: 0; }
+
+	.change-menu-icon .menu-bar-line3 { transform: rotate(45deg) translate(-7px, -7px); }
+
+	.dropdown {}
+
+	.dropdown .show-dropdown-content {
+		display: block;
+		width: 100%;
+		margin-left: -10px;
+		background-color: #fff; /* #3e739d */  /* #00cc66; */
+	}
+ 
+	.dropdown .show-dropdown-content a { 
+		display: block;
+		border-top: dashed;
+		border-color: blue;
+		color: black;
+		font-size: 25px;
+		text-align: center;
+	}
+}
+
+.hide-dropdown-content { display: none; }
+
+
+/* iPhone 4, iPhone 5/SE */
+@media (min-width: 0px) and (max-width: 321px) {
+	.profile-img-width { width: 120px; }
+	.profile-img-height { height: 120px; }	
+}
+
+@media (min-width: 322px) and (max-width: 824px) {
+	.profile-img-width { width: 125px; }
+	.profile-img-height { height: 125px; }	
+}
+
+@media only screen and (min-width: 825px) {
+	.profile-img-width { width: 250px; }
+	.profile-img-height { height: 250px; }
+}
+
+@media only screen and (max-width: 824px) {
+	.nav-bar { display: none; }
+
+	.nav-bar a.nav-menu { display: none; }
+
+	.nav-bar a.nav-menu:hover { display: none; }
+
+	.nav-bar a.active-nav-menu { display: none; }
+}

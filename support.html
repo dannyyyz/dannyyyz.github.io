@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0
+				maximum-scale=1.0 minimum-scale=1.0">
+		<title>Support</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+		<script src="resources/js/rotationScript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<script>
+		$(document).ready(function() {
+			$("#title-header").click(function() {
+				$(this).hide("slow");
+			});
+		});
+		</script>
+	</head>
+	<body onload="startAllRotations()">
+		<h1 id="title-header"
+			class="no-margin bg-blue center-text white-text default-font"> Support </h1> 
+		<div class="container" onclick="animateMenuIcon(this)">
+			<div class="menu-bar-line1"></div>
+			<div class="menu-bar-line2"></div>
+			<div class="menu-bar-line3"></div>
+
+			<div class="dropdown">
+				<div id="myDropDown" class="hide-dropdown-content">
+					<a href="index.html"> Home </a> <br />
+					<a href="project.html"> Projects </a> <br />
+					<a href="contact.html"> Contact </a> <br />
+					<a href="blog.html"> Blog </a> <br/>
+					<a href="support.html"> Support </a> <br/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="black-solid-border 2px-border-spacing white-blue-red-animation"> 
+			<div class="nav-bar">
+				<a class="nav-menu" href="index.html"> Home </a>
+				<a class="nav-menu" href="project.html"> Project </a>
+				<a class="nav-menu" href="contact.html"> Contact </a>
+				<a class="nav-menu" href="blog.html"> Blog </a>
+				<a class="nav-menu active-nav-menu" href="support.html"> Support </a>
+			</div>
+		</div>
+
+		<div class="blue-dotted-border 2px-border-spacing tan-blue-animation">
+			<br/><br/>
+			<h1 id="title-header"
+			class="no-margin bg-blue center-text white-text default-font"> How can we help? </h1>
+			<p class="center-text">
+				Please click button below to send me an email to discuss any problems, questions or concerns you have regarding my mobile applications or projects. 😄 <br/> <br/>
+				<form action="mailto:innovationstudio10@gmail.com">
+					<button 
+						class="center-img btn-bg-color btn-font btn-radius btn-w btn-h">
+						Click here 
+					</button>
+				</form>
+			</p>
+			<br/>
+		</div>
+
+	</body>
+</html>

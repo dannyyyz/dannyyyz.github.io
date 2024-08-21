@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 
+				maximum-scale=1.0 minimum-scale=1.0">
+		<title>Dannyz Blog</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+		<script src="resources/js/rotationScript.js"> </script>
+	</head>
+
+	<body onload="startAllRotations()">
+		<div class="container" onclick="animateMenuIcon(this)">
+			<div class="menu-bar-line1"></div>
+			<div class="menu-bar-line2"></div>
+			<div class="menu-bar-line3"></div>
+			<div class="dropdown">
+				<div id="myDropDown" class="hide-dropdown-content">
+					<a href="index.html"> Home </a> <br />
+					<a href="project.html"> Projects </a> <br />
+					<a href="contact.html"> Contact </a> <br />
+					<a href="blog.html"> Blog </a> <br/>
+					<a href="support.html"> Support </a> <br/>
+				</div>
+			</div>
+		</div>
+		<div class="black-solid-border 2px-border-spacing tan-blue-animation">
+			<div class="nav-bar">
+				<a class="nav-menu" href="index.html"> Home </a>
+				<a class="nav-menu active-nav-menu" href="project.html"> Project </a>
+				<a class="nav-menu" href="contact.html"> Contact </a>
+				<a class="nav-menu" href="blog.html"> Blog </a>
+				<a class="nav-menu" href="support.html"> Support </a>
+			</div>
+		</div>
+
+		<div class="red-dotted-border 2px-border-spacing tan-blue-animation">
+			<h1 class="default-font center-text"> My Projects </h1>
+
+			<h3 class="default-font center-text 25px-font"> Super Snake Attack 2D </h3>
+			<p class="monospace-arial-font center-text 15px-font blue-text"> 
+				A 2D arcade game where the player must survive from hordes of enemies <br/>
+				Super Snake Attack 2D is available on the Google Play Store.
+			</p>
+			<a href="https://play.google.com/store/apps/details?id=com.mygdx.SnakeAttack.android">
+				<img class="img-width-150 img-height-150 center-img project-img" 
+				src="resources/images/Snake_Attack_Logo.png" alt="Super Snake Attack 2D Logo">
+				<img class="img-width-300 img-height-125 center-img play-store-img"
+				src="resources/images/Google_Play_Store_logo_block.png" alt="Google Play Store Logo">
+			</a>
+
+			<h3 class="default-font center-text 25px-font"> Locally </h3>
+			<p class="monospace-arial-font center-text 15px-font blue-text">
+				An activity finder that enables users' to find and post activities nearby. <br/>
+			</p>
+			<p class="monospace-arial-font center-text 15px-font blue-text">
+				<b class="20px-font fade-in-infinite-text-animation"> 
+					Locally is under maintenance. Coming Soon! </b>
+			</p>
+			<a href="https://play.google.com/store/apps/details?id=com.app.danny.locally">
+				<img class="img-width-150 img-height-150 center-img project-img" 
+				src="resources/images/Locally_Logo.png" alt="Locally Logo">
+				<img class="img-width-300 img-height-125 center-img play-store-img"
+				src="resources/images/Google_Play_Store_logo_block.png" alt="Google Play Store Logo">
+			</a>
+		</div>
+	</body>
+</html>

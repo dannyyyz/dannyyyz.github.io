@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0
+				maximum-scale=1.0 minimum-scale=1.0">
+		<title>Dannyz Blog</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+		<script src="resources/js/rotationScript.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<script>
+		$(document).ready(function() {
+			$("#title-header").click(function() {
+				$(this).hide("slow");
+			});
+		});
+		</script>
+	</head>
+	<body onload="startAllRotations()">
+		<h1 id="title-header"
+		class="no-margin bg-blue center-text white-text default-font"> Contact Us </h1> 
+		<div class="container" onclick="animateMenuIcon(this)">
+			<div class="menu-bar-line1"></div>
+			<div class="menu-bar-line2"></div>
+			<div class="menu-bar-line3"></div>
+			<div class="dropdown">
+				<div id="myDropDown" class="hide-dropdown-content">
+					<a href="index.html"> Home </a> <br />
+					<a href="project.html"> Projects </a> <br />
+					<a href="contact.html"> Contact </a> <br />
+					<a href="blog.html"> Blog </a> <br/>
+					<a href="support.html"> Support </a> <br/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="black-solid-border">
+			<div class="nav-bar">
+				<a class="nav-menu" href="index.html"> Home </a>
+				<a class="nav-menu" href="project.html"> Project </a>
+				<a class="nav-menu active-nav-menu" href="contact.html"> Contact </a>
+				<a class="nav-menu" href="blog.html"> Blog </a>
+				<a class="nav-menu" href="support.html"> Support </a>
+			</div>
+		</div>
+		<div class="blue-dotted-border blue-green-animation">
+			<br/><br/>
+			<p class="white-text center-text monospace-arial-font 25px-font">
+				Please feel free to contact us via email <br/>
+			</p>
+			<button class="center-img btn-bg-light-red btn-font btn-radius btn-w btn-h">
+				<a class="white-text" href="mailto:@"> Click here to send email 😄</a>
+			</button> <br/>
+			<p class="white-text center-text monospace-arial-font 25px-font"> 
+				Your email will stay anonymous. 😄 <br/> </p>
+
+			<p class="white-text center-text monospace-arial-font 25px-font"> 
+				Services we provide </p>
+			<ul>
+				<li class="white-text center-text monospace-arial-font 25px-font">
+					Coding Mentorship </li>
+				<li class="white-text center-text monospace-arial-font 25px-font">
+					Tech & Blog Questions </li>
+				<li class="white-text center-text monospace-arial-font 25px-font"> 
+					Tutoring Service </li>
+			</ul>
+		</div>
+	</body>
+</html>

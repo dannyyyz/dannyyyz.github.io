@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	position: absolute;
+	margin: 10px 0px 0px 10px;
+}
+
+/* Border */
+.black-solid-border {
+	border-style: solid;
+	border-color: black;
+}
+.blue-dotted-border {
+	border-style: dotted;
+	border-color: blue; 
+}
+
+.red-dotted-border {
+	border-style: dotted;
+	border-color: red;
+}
+
+/* Color Text */
+.white-text { color: white; }
+.blue-text { color: blue; }
+.neon-green-text {color: #20C20E; }
+
+/* Background colors */
+.bg-blue { background-color: blue; }
+.bg-black { background-color: black; }
+
+/* Background image */
+.cali-img {
+	display: block;
+	height: 640px;
+	margin-top: -21px;
+	margin-bottom: -18px;
+	background-image: url("../images/cali.png");
+	background-color: #cccccc; /* gray transparent */
+}
+
+/* Font types */
+.default-font { font-family: Monospace, "Times New Roman"; }
+.monospace-arial-font { font-family: Monospace, "Arial"; }
+.impact-font { font-family: Impact; }
+
+
+/* Font size */
+.40px-font { font-size: 40px; }
+.25px-font { font-size: 25px; }
+.20px-font { font-size: 20px; }
+.15px-font { font-size: 15px; }
+
+/* Margin Type */
+.no-margin {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.top-margin-10px {
+	margin-top: 10px;
+}
+
+/* Width and heights */
+.img-width-75 { width: 75px; }
+.img-height-75 { height: 75px; }
+.img-width-150 { width: 150px; }
+.img-height-150 { height: 150px; }
+.img-width-300 { width: 300px; }
+.img-height-125 { height: 125px; }
+
+/* Center */
+.center-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* position: relative; */
+}
+.center-text { text-align: center; }
+
+
+.nav-bar {
+	width: 100%;
+	height: auto;
+	background-color: #555; /* Dary gray */
+	overflow: auto;
+}
+
+.nav-bar a.nav-menu {
+	float: left;
+	text-align: center;
+	font-size: 25px;
+	padding: 5px 5px;
+}
+
+.nav-bar a.nav-menu:hover {
+	background-color: #ddd; /* white */
+ 	color: black;
+ 	text-decoration: line-through;
+ 	cursor: pointer;
+}
+
+.nav-bar a.active-nav-menu {
+	background-color: #4CAF50; /* lime green */
+	color: white;
+}
+
+/* Button Attributes */
+.btn-bg-color {
+	background-color: #3CB371; /* medium sea green */
+}
+.btn-bg-light-red {
+	background-color: #ff6666; 
+}
+.btn-font { font-size: 16px; }
+.btn-radius { border-radius: 25px; }
+.btn-w { width: 200px; }
+.btn-h { height: 50px; }
+
+
+
+.2px-border-spacing { border-spacing: 2px; }
+
+.main-body-header-font {
+	font-size: 40px;
+	color: black;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 999px) {
+	.video-width {
+		width: 350px; 
+	}
+
+	.video-height {
+		height: 350px;
+	}
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+	.video-width {
+		width: 520px; 
+	}
+
+	.video-height {
+		height: 420px;
+	}
+}
+
+@media (max-width: 768px) {
+	.desktop-table-view {
+		display: none;
+	}
+}

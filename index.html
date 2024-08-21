@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0
+				maximum-scale=1.0 minimum-scale=1.0">
+		<title>Dannyz Blog</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+		<script src="resources/js/rotationScript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<script>
+		$(document).ready(function() {
+			$("#title-header").click(function() {
+				$(this).hide("slow");
+			});
+		});
+		</script>
+	</head>
+
+	<body onload="startAllRotations()">
+		<h1 id="title-header" 
+		class="no-margin bg-blue center-text white-text default-font"> Welcome </h1>
+	
+		<div class="container" onclick="animateMenuIcon(this)">
+			<div class="menu-bar-line1"></div>
+			<div class="menu-bar-line2"></div>
+			<div class="menu-bar-line3"></div>
+			<div class="dropdown">
+				<div id="myDropDown" class="hide-dropdown-content">
+					<a href="index.html"> Home </a> <br/>
+					<a href="project.html"> Projects </a> <br/> 
+					<a href="contact.html"> Contact </a> <br/>
+					<a href="blog.html"> Blog </a> <br/>
+					<a href="support.html"> Support </a> <br/>
+				</div>
+			</div>	
+		</div>
+		<div class="black-solid-border white-blue-red-animation"> 
+			<img class="profile-img-width profile-img-height center-img profile-img" 
+				src="resources/images/me.jpg" alt="Image of Developer">
+			<div class="nav-bar">
+				<a class="nav-menu active-nav-menu" href="index.html"> Home </a>
+				<a class="nav-menu" href="project.html"> Project </a>
+				<a class="nav-menu" href="contact.html"> Contact </a>
+				<a class="nav-menu" href="blog.html"> Blog </a>
+				<a class="nav-menu" href="support.html"> Support </a>
+			</div>
+		</div>
+		<div class="cali-img">
+			<h1 class="default-font center-text white-text">Purpose</h1>
+			<p class="default-font center-text fade-in-text-animation white-text">
+				I am Danny, a software engineer. <br/> 
+				My purpose is to document the journey of a software engineer. <br/>
+			</p>
+			<p class="default-font center-text fade-in-text-animation white-text">
+				The technology field is growing exponentially. <br/>
+				In 2020, <b class="20px-font fade-in-infinite-text-animation"> 1 million </b> 
+				software jobs will be available. <br/>
+				We are lacking minorities in the software field. <br/>
+				About <b class="20px-font fade-in-infinite-text-animation"> 5% </b>
+				of minorities are in the software industry including 
+				Hispanics and African American. <br/>
+			</p>
+		</div>
+	</body>
+</html>

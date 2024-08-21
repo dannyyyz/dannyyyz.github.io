@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0
+				maximum-scale=1.0 minimum-scale=1.0">
+		<title>Dannyz Blog</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+		<script src="resources/js/rotationScript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<script>
+		$(document).ready(function() {
+			$("#title-header").click(function() {
+				$(this).hide("slow");
+			});
+		});
+		</script>
+	</head>
+	<body onload="startAllRotations()">
+		<h1 id="title-header"
+			class="no-margin bg-blue center-text white-text default-font"> My Blog </h1> 
+		<div class="container" onclick="animateMenuIcon(this)">
+			<div class="menu-bar-line1"></div>
+			<div class="menu-bar-line2"></div>
+			<div class="menu-bar-line3"></div>
+
+			<div class="dropdown">
+				<div id="myDropDown" class="hide-dropdown-content">
+					<a href="index.html"> Home </a> <br />
+					<a href="project.html"> Projects </a> <br />
+					<a href="contact.html"> Contact </a> <br />
+					<a href="blog.html"> Blog </a> <br/>
+					<a href="support.html"> Support </a> <br/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="black-solid-border 2px-border-spacing white-blue-red-animation"> 
+			<div class="nav-bar">
+				<a class="nav-menu" href="index.html"> Home </a>
+				<a class="nav-menu" href="project.html"> Project </a>
+				<a class="nav-menu" href="contact.html"> Contact </a>
+				<a class="nav-menu active-nav-menu" href="blog.html"> Blog </a>
+				<a class="nav-menu" href="support.html"> Support </a>
+			</div>
+		</div>
+
+		<div class="blue-dotted-border 2px-border-spacing tan-blue-animation">
+			<br/><br/>
+			<p class="center-text">
+				Would you like me to discuss a topic on my blog? <br/>
+				Click on the button below to send me an email. <br/>
+				Your email will stay anonymous. 😄 <br/>
+				<form action="mailto:officialdannyr@gmail.com">
+					<button 
+						class="center-img btn-bg-color btn-font btn-radius btn-w btn-h">
+						Click here to email me 😄
+					</button>
+				</form>
+			</p>
+			<br/>
+
+			<h1 class="center-text"> What you need to know to build a website </h1>
+			<p class="center-text">
+				Building a website requires 3 languages: HTML, CSS, Javascript. <br/>
+				What is HTML? </p>
+				<ul class="center-text">
+					<li> HTML stands for Hyper Text Markup Language</li>
+					<li> HTML is used to display headings, text, buttons, list, images, or links to a website.</li>
+					<li> HTML follows a certain grammar and uses heading tags and closing tags to display headings, text, buttons, list, images or links. </li>
+					<i> Most Frequently used HTML tags </i>
+					<ol>
+						Tells your browser that you will be using the HTML language
+						<li class="neon-green-text bg-black"> "< html> < /html></li>
+						Tells your browser that there is a head section. This is added before the body.
+						<li class="neon-green-text bg-black"> "< head> < /head>" </li>
+						Tells your browser that there is a body section. 
+						<li class="neon-green-text bg-black"> "< body> < /body>"</li>
+						Tells your browser that there is heading1, heading2,... heading6. Heading1 is the largest and Heading6 is the smallest
+						<li class="neon-green-text bg-black"> "< h1> This is where your heading goes < /h1>" </li>
+						<li class="neon-green-text bg-black"> "< h2> This is where your heading goes < /h2>" </li>
+						<li class="neon-green-text bg-black"> "< h3> This is where your heading goes < /h3>" </li>
+						<li class="neon-green-text bg-black"> "< h6> This is where your heading goes < /h6>" </li>
+						Tells your browser that there is a paragraph.
+						<li class="neon-green-text bg-black"> "< p> This is where your paragraph goes < /p>"</li>
+						Tells your browser that there is an image.
+						<li class="neon-green-text bg-black"> "< img src="Your-Image-File.jpeg"> </li>
+						Tells your browser that there is a section in your HTML code.
+						<li class="neon-green-text bg-black"> "< div>  </ div>"</li>
+						Tells your browser that there is an anchor tag. Anchor tag are used for a link destination.
+						<li class="neon-green-text bg-black"> "< a href="https://www.google.com"> < /a>" </li>
+						Href means hyperlink reference. The href attributes specifies the URL of where the link will go. 
+						<p> Keep in mind that there is more HTML tags. However, this is the basics you will need to make a website. </p>
+					</ol>
+				</ul>
+				<p class="center-text"> What is CSS? </p>
+				<ul class="center-text">
+					<li> CSS stands for Cascading Style Sheet </li>
+					<li> CSS is used to style and customize your website by adding colors, animation, and fonts. </li>
+					<li> CSS follows a certain grammar that uses classes and id to customize HTML tags </li>
+					<br/>
+					A few examples written in HTML and CSS
+					<li class="neon-green-text bg-black">
+						"< p class="black-text"> This is where your paragraph goes < /p>"
+						<br/>
+						"< style> <br/>
+							.black-text { <br/>
+								color: black; <br/>
+							} <br/>
+						< /style>" <br/>
+					</li>
+				</ul>
+
+				<p class="center-text"> What is Javascript? </p>
+				<ul class="center-text">
+					<li> Javascript is a high level programming language that is used as a client side scripting language </li>
+					<li> Javascript code is written into HTML pages. </li>
+					<li> Javascript can be used to make an change or an action to your website. For example, clicking on an image will require Javascript to open up another HTML page. </li>
+				</ul>
+
+			<h1 class="center-text"> The life of a software developer </h1>
+			<img class="img-width-150 img-height-150 center-img" src="resources/images/simpson.gif">
+			<p class="center-text">
+				First off, if you are a software developer or learning how to code. Give yourself a pat in the back. Seriously. <br/> 
+				<i class="fade-in-infinite-text-animation"> You are awesome! </i> <br/> 
+				<i class="fade-in-infinite-text-animation"> Don't ever forget that! </i> <br/>
+				So, what is a software developer? <br />
+				A software developer is someone who creates computer software including the design and testing of a software such as mobile apps, desktop apps, or websites. <br/>
+				An example will be this website that I designed and created for you. <br/>
+				Being a software developer is a talented skill to have and requires a shit ton of patience and perseverance. It also requires you to be detail oriented and have a passion for technology. <br/>
+				I also want to mention that at some point in your life you might be discouraged to learn how to code or have self doubt in your software career. <br/>
+				This is normal. As a matter of fact many programmers face imposter syndrome at some point in his or her life. So, please do <b> not </b> be discouraged. <br/>
+				<i class="fade-in-infinite-text-animation"> You are never too late to start learning how to code. </i> <br/> 
+				<i class="fade-in-infinite-text-animation"> Just remember nobody in this world cannot take away your knowledge. </i> <br/>
+				Lastly, tech is changing rapidly and many programmers must upgrade his or her skills in order to stay competitive and up to date in the software industry. <br/>
+			</p>
+
+			<!--
+			<br/>
+			<h1 class="center-text"> Tips for future and current college students </h1>
+			<p class="center-text">
+				Is college worth it? That is probably what you want to know. <br/>
+				Well, this depends on what you are pursuing. But college is worth investing if you are pursuing engineering, computer science, teaching, doctor, nurse, business, or anything related to STEM. <br/>
+				However, just because you major in the following field does not entitle you with a job in your career. <br/>
+				The market is SATURATED with many youngster with a degree and the market is  COMPETITIVE for any degree you achieve. <br />
+				You must distinguish yourself from others and figure out how to stand out. <br/> 
+				However, college can help you and give you that extra boost in your career but nothing is guaranteed. <br/> 
+				Best advice I can give you is to find internships and apply everywhere. <br/> Literally everywhere!! <br/>
+				Internships is where you will network with people in your field. This will be a pedestal in your career. <br/>
+				Find your passion in college and take classes you are highly passionate about. <br/>
+				<i class="fade-in-infinite-text-animation"> The greater the passion you have for a subject, the more self-driven you will become even if the odds are against you. </i><br/>
+				<i class="fade-in-infinite-text-animation"> Your passion will be similar to falling in love. </i> <br/> 
+				Do not major in a field because is easy or it will make you a ton of money. You will not be happy and you are just hurting yourself in the long term. Focus on your passion and the money will follow. <br/>
+				I will highly encourage you to find a backup plan just in case college does not go as what you expect. Start your own side hustle in what you are passionate about.
+				<br/> 
+				<i class="fade-in-infinite-text-animation"> 
+				You do not need college to be successful. </i> <br/>
+				<b class="fade-in-infinite-text-animation"> EXPERIENCE > DEGREE </b> <br/>
+				You just need to be passionate about a field that you are an expert and build a business around your passion. <br/>
+				<i class="fade-in-infinite-text-animation"> Best of luck. </i> <br/> 
+				If you would like to contact me click on the link below to send me an email. 😁 
+				<br/>
+				<a href="mailto:coding4minorities@gmail.com">Click here to email me</a>
+			</p>
+			-->
+			
+			<br/>
+			<h1 class="center-text"> Read if you are majoring in Computer Science </h1>
+			<p class="center-text">
+				There is too much hype in this field. So, let me start off by stating the truth about majoring in Computer Science <br/>
+				First off, if you have a delusional mentality about how rich you will be after graduating then pursuing this field is like running into a brick wall. 😅 <br/>
+				Studying computer science requires <i class="fade-in-infinite-text-animation"> hard work! </i> <br/>
+				There is <b> no luck </b> in this field. <br/>
+				You must have a deep passion for technology. <br/>
+				<i class="fade-in-infinite-text-animation"> Like I said before, the greater the passion you have, the more self-driven you will become even if the odds are against you. </i><br/>
+				<i class="fade-in-infinite-text-animation"> You must be an over achiever if you really want to be a software engineer. </i> <br/>
+				Do you think I am exaggerating? 😂 😂 😂 😂 <br/>
+				Let me explain why you think I might be exaggerating. Most school focuses on the theoretical concept of computer science. <br/>
+				Of course, this is critical and highly important because without it you cannot proceed into learning how to code. <br/>
+				But, learning theory is not enough to be employed as a software engineer. <br/>
+				<i class="fade-in-infinite-text-animation"> You <b> must </b> create your own self project outside of school in order to prove the world that you are good enough. </i>
+				<br/>
+				This means developing projects for free. Yes, FREE! <br/>
+				This means grinding past midnight and creating your own self projects instead of just doing the minimal amount of work. <br/>
+				<i class="fade-in-infinite-text-animation"> The best programmers tend to be hobbyist because he or she creates software at an every day basis. </i> <br/>
+				Do not be discouraged though. If you have a deep passion for technology nothing will stop you. <br/>
+				Welcome to the programmer's world.
+			</p>
+
+			<br/>
+			<h1 class="center-text"> Why you should fail more often </h1>
+			<p class="center-text fade-in-infinite-text-animation">
+				The faster you fail the higher chance you will succeed. <br/>
+			</p> 
+			<p class="center-text">
+				Let's be honest. Failing sucks! But you can learn from your failures and enable yourself to think wisely and intelligently. Failures applies to everything in life not just school. <br/>
+				<i class="fade-in-infinite-text-animation"> Learn to embrace failure. </i> <br/>
+				This will take some time to get use to because as a human beings we tend to fear change. We tend to avoid change. We fear rejection. <br/>
+				In simple terms, you cannot be successful or want to be successful without taking the failures. <br/>
+				You must learn to love failure. <br/>
+				You must love eating the dirt in order to reach your end goal. <br/>
+				Do not take failure as a pessimistic view and give up because of it. <br/>
+				I have failed in many things in my life. This blog has a high chance of failing. But, I'm still creating this blog because I can still learn something from it. I can probably help someone out who is reading this. Besides, I'm learning to code and building up my portfolio. <br/>
+				So, basically Im killing two birds with one stone. <br/>
+				Take care. 😁
+			</p>
+
+			<br/>
+			<h1 class="center-text"> How to overcome depression, anxiety, or loneliness </h1>
+			<p class="center-text">
+				If you are reading this, I just want to let you know you are not alone. <br/>
+				I also want to let you know that this feeling is only temporary and only you have the ability to change it. <br/>
+				You may feel a lot of pressure in today's society. <br/>
+				I do too! Believe me. <br/>
+				I believe many of you who are going through this are mentally beating yourself up. 
+				<br/>
+				Take a break. Go out for a walk. <br/>
+				<i class="center-text fade-in-infinite-text-animation"> Refresh your mind. </i> 
+				<br/>
+				It is going to be OK. 👌 👌 <br/>
+				Keep trying and never give up! <br/>
+				Be patient in whatever you are trying to accomplish. <br/>
+				Stop comparing yourself to others. Life is not a race. <br/>
+				Focus on building yourself. Focus on self improving yourself. <br/>
+				Social media may be tackling your emotions by seeing someone flexing. <br/>
+				But who cares!! <br/> Social media is only a 1 dimension world! <br/>
+				Follow your dreams and passion. <br/>
+				Life is hard and giving up will not solve anything and will only slow you down. 
+				<br/>
+				Keep persevering. <br/> It will all get better. 👌 <br/>
+				It is a marathon. Not a race. <br/> Take care of yourself 😎 <br/>
+			</p>
+
+			<!--
+			<br/>
+			<h1 class="center-text"> Being a minority in the software industry </h1>
+			<img class="img-width-150 img-height-150 center-img" src="resources/images/southpark.gif">
+			<p class="center-text">
+				😂 😂 I am exagerrating a bit. 😂 😂 <br/> 
+				<b class="fade-in-infinite-text-animation"> As a minority you are going to have to prove alot of people wrong. </b> <br/>
+				Many people in this field will either question, laugh, or mock you for literally everthing! <br/>
+				Oh, you went to this college <br /> 
+				<img class="img-width-75 img-height-75 center-img"
+					src="resources/images/despicableMe.gif">
+				Oh, you prefer Mac then Linux.  <br />
+				<img class="img-width-75 img-height-75 center-img"
+					src="resources/images/despicableMe.gif">
+				Oh, you dont know this framework, library or programming language. <br />
+				<img class="img-width-75 img-height-75 center-img"
+				src="resources/images/despicableMe.gif">
+				<b class="fade-in-infinite-text-animation"> I guess this is why many programmers have imposter syndrome. </b> <br />
+				It eventually becomes to a point where you will feel a level of discomfort in
+				the workforce. <br/>
+				Do not let it affect you. <br/>
+				<b class="fade-in-infinite-text-animation"> Stay strong. Stay humble. </b> <br/>
+			</p>
+			-->
+
+			<br/><br/><br/>
+			<p class="center-text">
+				Would you like me to discuss a topic on my blog? <br/>
+				Click on the button below to send me an email. <br/>
+				Your email will stay anonymous. 😄 <br/>
+				<form action="mailto:officialdannyr@gmail.com">
+					<button 
+						class="center-img btn-bg-color btn-font btn-radius btn-w btn-h">
+						Click here to email me 😄
+					</button>
+				</form>
+			</p>
+			
+			<br/>
+			<p class="40px-font impact-font center-text fade-in-infinite-text-animation"> Stay Grinding. </p>
+			<br/>
+		</div>
+
+	</body>
+</html>
